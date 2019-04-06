@@ -1,4 +1,4 @@
-#WEEKLY CHALLENGE 2
+# WEEKLY CHALLENGE 2
 
 Second project from Weekly Challange Series. I would like to focus on mastering HTML and CSS skills
 

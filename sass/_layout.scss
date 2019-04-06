@@ -1,0 +1,40 @@
+//HEADER
+.header{
+    position: fixed;
+    top: 0;
+
+
+    &__logo{
+
+    }
+}
+
+main{
+}
+
+//SECTION HOME
+.home{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../img/strawberry.png");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__box{
+        width: 35rem;
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-left: 12rem;
+    }
+
+    &__paragraph{
+        padding: 2rem 0;
+    }
+
+
+}

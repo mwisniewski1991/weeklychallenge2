@@ -1,0 +1,30 @@
+.heading-one{
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 0
+}
+
+
+.button{
+    width: 14rem;
+    height: 4rem;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    box-shadow: 0 1px 4px 1px rgba($color-black, .7 );
+    outline: none;
+    transition: all .2s;
+
+    &--orange{
+        background-color: $color-orange;
+
+        &:focus{
+            box-shadow: 0 1px 8px 3px rgba($color-black, .9);
+        }
+    }
+
+}

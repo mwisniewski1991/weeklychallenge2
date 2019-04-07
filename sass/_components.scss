@@ -32,13 +32,18 @@
     outline: none;
     transition: all .2s;
 
+    &:focus{
+        box-shadow: 0 1px 8px 3px rgba($color-black, .9);
+    }
+
     &--orange{
         background-color: $color-orange;
-
-        &:focus{
-            box-shadow: 0 1px 8px 3px rgba($color-black, .9);
-        }
     }
+
+    &--blue{
+        background-color: $color-blue-3;
+    }
+
 
 }
 
@@ -56,5 +61,41 @@
 
     &__link{
 
+    }
+}
+
+.offer-item{
+    display: flex;
+
+    width: 30rem;
+    height: 8rem;   
+
+    background-color: $color-white;
+    box-shadow: 2px 2px 5px 2px rgba($color-black, .5);
+
+    &:not(:last-child){
+        margin-bottom: 2rem;;
+    }
+
+    &__link{
+        flex: 1;
+        font-size: 1.4rem;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        color: $color-black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+        border-right: 1px solid rgba($color-black, .5);
+    }
+
+    &__icon{
+        flex: 0 0 8rem;
+        font-size: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

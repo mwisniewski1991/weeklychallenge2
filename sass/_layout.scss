@@ -107,3 +107,80 @@ main{
         margin: 0 0 2rem 0;
     }
 }
+
+//SECTION SERVICES
+.services{
+    height: 80vh;
+    background-color: $color-blue-2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__box{
+    position: relative;
+
+    }
+
+    &__head{
+        position: relative;
+        z-index: 5;
+    }
+
+    &__img{
+        width: 35rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+}
+
+//SECTION GALLERY
+.gallery{
+    height: 100vh;
+    background-color: $color-yellow;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__paragraph{
+        width: 40%;
+        line-height: 1.7rem
+    }
+
+    &__photos{
+        width: 90%;
+    }
+
+    &__row-one{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &___row-one-col-a{
+        width: 70%;
+    }
+
+    &___row-one-col-b{
+        flex: 1;
+    }
+
+    &__img1{
+        background-color: #fff;
+    }    
+    &__img2{
+
+    }
+
+    &__img3{
+
+    }
+
+
+    &__rwo-two{
+
+    }
+}

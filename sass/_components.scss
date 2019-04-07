@@ -4,6 +4,19 @@
     padding: 0
 }
 
+.heading-two{
+    font-size: 6rem;
+    font-weight: 400;
+
+    &--white{
+        color: $color-white;
+    }
+
+    &--black{
+        color: $color-black;
+    }
+}
+
 
 .button{
     width: 14rem;
@@ -27,4 +40,21 @@
         }
     }
 
+}
+
+
+.roller{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(50%, 0);
+
+    &__img{
+        width: 2.5rem;
+
+    }
+
+    &__link{
+
+    }
 }

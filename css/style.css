@@ -15,12 +15,44 @@ body {
   font-family: 'Heebo', sans-serif; }
 
 .header {
+  width: 100%;
+  margin: 2rem 0;
   position: fixed;
-  top: 0; }
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2; }
+  .header__logo {
+    display: block;
+    margin-left: 12rem; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+.nav {
+  margin-right: 12rem; }
+  .nav__item {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 1rem;
+    transition: all .2s; }
+    .nav__item:first-child {
+      border-top: 4px solid #d6570e; }
+    .nav__item:hover {
+      transform: scale(1.2); }
+  .nav__link:link, .nav__link:visited {
+    text-decoration: none;
+    color: #000; }
 
 .home {
   width: 100vw;
   height: 100vh;
+  position: relative;
   background-image: url("../img/strawberry.png");
   background-position: center;
   background-size: cover;
@@ -35,10 +67,33 @@ body {
   .home__paragraph {
     padding: 2rem 0; }
 
+.about {
+  height: 80vh;
+  background-color: #00bab9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  .about__img {
+    width: 60rem; }
+  .about__box {
+    width: 30%; }
+  .about__paragraph {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0 0 2rem 0; }
+
 .heading-one {
   font-size: 4rem;
   font-weight: 700;
   padding: 0; }
+
+.heading-two {
+  font-size: 6rem;
+  font-weight: 400; }
+  .heading-two--white {
+    color: #fff; }
+  .heading-two--black {
+    color: #000; }
 
 .button {
   width: 14rem;
@@ -57,3 +112,11 @@ body {
     background-color: #d6570e; }
     .button--orange:focus {
       box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.9); }
+
+.roller {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(50%, 0); }
+  .roller__img {
+    width: 2.5rem; }

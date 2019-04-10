@@ -1,7 +1,8 @@
 //HEADER
 .header{
     width: 100%;
-    margin: 2rem 0;
+    background-color: rgba($color-white, .5);
+    padding: 1rem 0;
     position: fixed;
     top: 0;
     display: flex;
@@ -24,11 +25,13 @@ main{
 .nav{
     margin-right: 12rem;
     
+
     &__list{
 
     }       
 
     &__item{
+        position: relative;
         display: inline-block;
         text-transform: uppercase;
         font-size: 2rem;
@@ -37,12 +40,32 @@ main{
         transition: all .2s;
         outline: none;
 
-        &:first-child{
+        &::after{
+            content: "";
+            width: 0%;
+            // height: 100%;
+            border-top: 4px solid $color-pink;
+            position: absolute;
+            top: -20%;
+            left: 5%;
+            transition: all .2s;
+        }
+
+        &:first-child::before{
+            content: "";
+            width: 90%;
+            // height: 100%;
             border-top: 4px solid $color-orange;
+            position: absolute;
+            top: -20%;
+            left: 5%;
+            transition: all .2s;
         }
 
         &:hover{
-            transform: scale(1.2);
+            &::after{
+                width: 90%;
+            }
         }       
     }
 
@@ -298,7 +321,7 @@ main{
     &__date{
         width: 5rem;
         height: 5rem;
-        background-color: rgba($color-black, .4);
+        background-color: rgba($color-black, .6);
 
         position: absolute;
         top: 3rem;
@@ -321,5 +344,115 @@ main{
 
     &__time{
         color: $color-white;
+    }
+}
+
+// CONTACT SECTION
+.contact{
+    height: 90vh;
+    background-image: url(../img/trees.png);
+    background-position: center;
+    background-size: 100%;
+    padding: 5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__paragraph{
+        font-size: 1.5rem;
+        color: $color-black;
+        width: 50%;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    &__contact-box{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__form{
+        width: 35%;
+        // height: 30rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item{
+        position: relative;
+        height: 4rem;
+        background-color: rgba($color-sky, .5);
+        border: none;
+        color: $color-white;
+        font-family: inherit;
+        padding: 0 1rem;
+        transition: all .2s;
+
+        &::placeholder{
+            color: $color-white;
+        }
+
+        &:focus{
+            background-color: rgba($color-sky, 1);
+            outline: none;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__message{
+        height: 20rem;
+        background-color: rgba($color-sky, .5);
+        border: none;
+        color: $color-white;
+        font-family: inherit;
+        padding: 1rem 1rem;
+        resize: none;
+        transition: all .2s;
+
+        &::placeholder{
+            color: $color-white;
+        }
+
+        &:focus{
+            background-color: rgba($color-sky, 1);
+            outline: none;
+        }
+    }
+
+    &__details{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }   
+
+    &__head{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        padding: 0 0 1rem 0;
+    }
+}
+
+
+//FOOTER
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: $color-black-2;
+    color: $color-grey;
+    font-size: 1.5rem;
+
+    &__span{
+        color: $color-pink; 
     }
 }

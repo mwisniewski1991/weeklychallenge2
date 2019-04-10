@@ -19,32 +19,32 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header> 
         
     <main>
         <!-- HOME -->
-        <section class="home">
+        <section class="home" id="home">
             <div class="home__box">
                 <h1 class="heading-one">Fresh Life</h1>
                 <p class="home__paragraph">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quid nostrud exercitation ullamco.</p>
                 <button class="button button--orange">Get Free Now</button>
             </div>     
             <div class="roller">
-                <a href="#" class="roller__link">
+                <a href="#about" class="roller__link">
                     <img src="img/mouse-scroll.png" alt="Mouse scroll" class="roller__img">
                 </a>
             </div>
         </section>
 
         <!-- ABOUT -->
-        <section class="about">
+        <section class="about" id="about">
             <img src="img/plate.png" alt="" class="about__img">
             <div class="about__box">
                 <h2 class="heading-two heading-two--white">About Us</h2>
@@ -61,7 +61,7 @@
         </section>
 
         <!-- SERVICES -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="services__offer">
                 <div class="offer-item"><a href="#" class="offer-item__link">Online Shopping</a><div class="offer-item__icon"><i class="fas fa-shopping-cart"></i></div></div>
                 <div class="offer-item"><a href="#" class="offer-item__link">Quality product</a><div class="offer-item__icon"><i class="fas fa-hand-holding"></i></div></div>
@@ -75,7 +75,7 @@
         </section>
 
         <!-- GALLERY -->
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <h2 class="heading-two heading-two--black">Gallery</h2>
             <p class="gallery__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Qui molestiae sed illo nemo rem dicta aliquid quibusdam minima ducimus numquam neque ipsam architecto repellendus beatae 
@@ -108,7 +108,7 @@
         </section>
 
         <!-- BLOG -->
-        <section class="blog">
+        <section class="blog" id="blog">
             <h2 class="heading-two heading-two--white">Blog</h2>
             <p class="blog__paragraph">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -126,7 +126,6 @@
                 </div>
                 <div class="blog__item blog__item--2">
                         <div class="blog__date">14 Nov</div>
-                        <div class="blog__date">20 Nov</div>
                     <div class="blog__description">
                         <h4 class="heading-four">Gorwing Food and a "Thirst" for Innovation</h4>
                         <p class="blog__time">By Auskteez - 3 hours ago</p>
@@ -134,7 +133,6 @@
                 </div>
                 <div class="blog__item blog__item--3">
                         <div class="blog__date">10 Nov</div>
-                        <div class="blog__date">20 Nov</div>
                     <div class="blog__description">
                         <h4 class="heading-four">Pesticides & Food: What You Need to Know</h4>
                         <p class="blog__time">By Auskteez - 6 hours ago</p>
@@ -144,8 +142,36 @@
             <button class="button button--pink">View more</button>
         </section>
 
-        <section class="contact"></section>
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <h2 class="heading-two heading-two--black">Contact</h2>
+            <p class="contact__paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, optio! Quam, reprehenderit tempore fugiat libero 
+                nesciunt ad minima ut doloremque nihil animi sapiente adipisci atque saepe asperiores.
+            </p>
+            <div class="contact__contact-box">
+                <form class="contact__form">
+                    <input type="text" class="contact__item" placeholder="Name">
+                    <input type="text" class="contact__item" placeholder="Your mail">
+                    <input type="text" class="contact__item" placeholder="Your phone number">
+                    <textarea name="" class="contact__message" placeholder="Your message"></textarea>
+                </form>
+                <div class="contact__details">
+                    <span class="contact__head"><strong>Address</strong></span>
+                    <span class="contact__text">123 City name, Street, City, Country</span>
+                    <span class="contact__head"><strong>Email</strong></span>
+                    <span class="contact__text">cahee@domain.com</span>
+                    <span class="contact__head"><strong>Phone</strong></span>
+                    <span class="contact__text">+012 345 6789</span>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+        <div class="footer__rights">&copy; 2015 Comapny. All right reserved</div>
+        <img src="img/logo-small.png" alt="Logo" class="footer__icon">
+        <div class="footer__regards">Made with <span class="footer__span">love</span> by Auskteez</div>
+    </footer>
     </body>
 </html>

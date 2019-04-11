@@ -7,5 +7,9 @@ PROJECT: https://github.com/mwisniewski1991/weeklychallenge2/blob/master/Project
 
 LIVE: https://mwisniewski1991.github.io/weeklychallenge2/
 
-For all my project I use template files, with sass.
+Stack used in project:
+- html
+- css
+- sass (scss)
+- bem methodology
 

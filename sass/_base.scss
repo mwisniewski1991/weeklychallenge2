@@ -13,6 +13,10 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
     scroll-behavior: smooth;
+
+    @media (max-width: 600px){
+        font-size: 43.75%; //1rem = 7px
+    }
 }
 
 body{

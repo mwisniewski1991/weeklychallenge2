@@ -33,9 +33,12 @@ main{
 }
 
 .nav{
+
+    
     
     &__list{
-
+        @media (max-width: 600px){
+        }
     }       
 
     &__item{
@@ -47,6 +50,9 @@ main{
         padding: 0 1rem;
         transition: all .2s;
         outline: none;
+
+        @media (max-width: 600px){
+        }
 
         &::after{
             content: "";
@@ -75,6 +81,8 @@ main{
                 width: 90%;
             }
         }       
+
+       
     }
 
     &__link{
@@ -83,6 +91,18 @@ main{
             text-decoration: none;
             color: $color-black;
         }   
+    }
+
+    &__input{
+        display: none;
+
+        &:checked + .nav__list{
+            display: block;
+        }
+    }
+
+    &__label{
+        display: none;
     }
 }    
 

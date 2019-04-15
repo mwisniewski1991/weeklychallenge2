@@ -8,6 +8,10 @@
     font-size: 8rem;
     font-weight: 400;
 
+    @media (max-width: 900px){
+        font-size: 6rem;
+    }
+
     &--white{
         color: $color-white;
     }

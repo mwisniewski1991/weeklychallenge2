@@ -148,7 +148,7 @@ main{
         @media (max-width: 600px) {
             order: 1;
             width: 100%;
-            padding: 0 1rem;
+            padding: 0 2rem;
         }
     }
 
@@ -171,9 +171,26 @@ main{
     align-items: center;
     justify-content: space-evenly;
 
-    &__box{
-    position: relative;
+    @media (max-width: 600px){
+        height: auto;
+        padding: 2rem 2rem 4rem 2rem;
+        flex-direction: column;
+    }
+    
+    &__offer{
+        @media (max-width: 600px){
+            order: 2;
+        }
+    }
 
+    &__box{
+        position: relative;
+
+        @media (max-width: 600px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__head{
@@ -188,6 +205,14 @@ main{
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
+        
+        @media (max-width: 600px){
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: translate(0, 0);
+            margin: 2rem 0;
+        }
     }
 }
 
@@ -200,6 +225,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 600px){
+        padding: 2rem 2rem 4rem 2rem;
+    }
     
     &__paragraph{
         width: 40%;
@@ -207,6 +236,11 @@ main{
         font-size: 1.5rem;
         text-align: center;
         margin-bottom: 5rem;
+
+        @media (max-width: 600px){
+            width: 100%;
+            text-align: justify;
+        }
     }
 
     &__photos{
@@ -285,25 +319,48 @@ main{
     }
 }
 
-
 //SUBSCRIPTION SECTION
 .subs{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 600px){
+        padding: 2rem 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__box{
         margin-left: 10rem;
+
+        @media (max-width: 600px){
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            z-index: 1;
+        }
     }
 
     &__parapgraph{
         font-size: 1.5rem;
         margin: 1.2rem 0;
         width: 70%;
+
+        @media (max-width: 600px){
+            width: 100%;
+            text-align: justify;
+        }
     }
 
     &__form{
-
+        display: block;
+        
+        @media (max-width: 600px){
+            width: 100%;
+        }
     }
 
     &__input{
@@ -319,9 +376,18 @@ main{
         &:focus{
             transform: scale(1.05)
         }
+
+        @media (max-width: 600px){
+            width: 100%;
+            margin: 0 0 2rem 0;
+        }
     }
 
     &__photo{
+        @media (max-width: 600px){
+            position: relative;
+            z-index: 0;
+        }
     }
 
 }
@@ -337,6 +403,10 @@ main{
     align-items: center;
     padding: 4rem 0;
 
+    @media (max-width: 600px){
+        padding: 2rem 2rem 4rem 2rem;
+    }
+
     &__paragraph{
         font-size: 1.5rem;
         color: $color-white;
@@ -344,6 +414,11 @@ main{
         font-weight: 300;
         text-align: center;
         margin-bottom: 4rem;
+
+        @media (max-width: 600px){
+            width: 100%;
+            text-align: justify;
+        }
     }
 
     &__info-box{
@@ -351,6 +426,12 @@ main{
         margin-bottom: 4rem;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 600px){
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
 
     &__item{
@@ -366,6 +447,11 @@ main{
 
         &:not(:last-child){
             margin-right: 4rem;
+
+            @media (max-width: 600px){
+                margin-right: 0;
+                margin-bottom: 2rem;                
+            }
         }
 
         &--1{
@@ -423,6 +509,11 @@ main{
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: 600px){
+        background-size: 350%;
+        padding: 0rem 2rem;
+    }
+
     &__paragraph{
         font-size: 1.5rem;
         color: $color-black;
@@ -430,19 +521,34 @@ main{
         font-weight: 300;
         text-align: center;
         margin-bottom: 4rem;
+
+        @media (max-width: 600px){
+            width: 100%;
+            text-align: justify;
+        }
     }
 
     &__contact-box{
         width: 80%;
         display: flex;
         justify-content: space-around;
+
+        @media (max-width: 600px){
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__form{
         width: 35%;
-        // height: 30rem;
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 600px){
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__item{

@@ -22,7 +22,9 @@ html {
         font-size: 43.75%; //1rem = 7px
     }
 
-    
+    @media (min-width: 1200px){
+        font-size: 75%; //1rem = 12px
+    }
 }
 
 body{
@@ -33,4 +35,8 @@ body{
 }
 
 @media (max-width: 600px){
+}
+
+
+@media (min-width: 1200px){
 }

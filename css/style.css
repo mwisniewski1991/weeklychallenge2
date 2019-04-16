@@ -20,6 +20,9 @@ html {
   @media (max-width: 600px) {
     html {
       font-size: 43.75%; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Heebo', sans-serif; }

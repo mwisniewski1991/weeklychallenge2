@@ -697,14 +697,45 @@ main{
 
 //FOOTER
 .footer{
-    display: flex;
     justify-content: space-around;
     padding: 2rem 0;
     background-color: $color-black-2;
     color: $color-grey;
     font-size: 1.5rem;
 
+    display: flex;
+
+    @media (max-width: 600px){
+        padding: 1rem 2rem;
+        
+        justify-content: space-between;
+        flex-wrap: wrap;        
+    }
+
+    &__rights{
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 600px){
+            width: 60%;
+        }
+    }
+
+    &__icon{
+        @media (max-width: 600px){
+            
+        }
+    }
+
+    &__regards{
+        @media (max-width: 600px){
+            width: 100%;
+        }
+    }
+
     &__span{
         color: $color-pink; 
     }
+
+
 }

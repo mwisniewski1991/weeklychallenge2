@@ -162,9 +162,12 @@ main {
       height: auto;
       padding: 2rem 2rem 4rem 2rem;
       flex-direction: column; } }
-  @media (max-width: 600px) {
-    .services__offer {
-      order: 2; } }
+  .services__offer {
+    width: 35%; }
+    @media (max-width: 600px) {
+      .services__offer {
+        order: 2;
+        width: 80%; } }
   .services__box {
     position: relative; }
     @media (max-width: 600px) {
@@ -300,7 +303,7 @@ main {
     height: 4rem;
     margin-right: 3rem;
     border: 1px solid #000;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0 1rem;
     outline: none;
     transition: all .2s; }
@@ -556,14 +559,11 @@ main {
 
 .offer-item {
   display: flex;
-  width: 35rem;
+  width: 100%;
   height: 8rem;
   background-color: #fff;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
   transition: all .2s; }
-  @media (max-width: 600px) {
-    .offer-item {
-      width: 45rem; } }
   .offer-item:not(:last-child) {
     margin-bottom: 2rem; }
   .offer-item:hover {

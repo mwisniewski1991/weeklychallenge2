@@ -498,12 +498,26 @@ main {
     padding: 0 0 1rem 0; }
 
 .footer {
-  display: flex;
   justify-content: space-around;
   padding: 2rem 0;
   background-color: #262626;
   color: #999;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  display: flex; }
+  @media (max-width: 600px) {
+    .footer {
+      padding: 1rem 2rem;
+      justify-content: space-between;
+      flex-wrap: wrap; } }
+  .footer__rights {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 600px) {
+      .footer__rights {
+        width: 60%; } }
+  @media (max-width: 600px) {
+    .footer__regards {
+      width: 100%; } }
   .footer__span {
     color: #eb2387; }
 

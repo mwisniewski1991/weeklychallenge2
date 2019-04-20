@@ -37,7 +37,24 @@ main{
     
     
     &__list{
+
         @media (max-width: 600px){
+            display: none;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color-white, .8);
+            padding-top: 10rem;
+
+            z-index: 1;
+
+
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
         }
     }       
 
@@ -52,6 +69,10 @@ main{
         outline: none;
 
         @media (max-width: 600px){
+            display: block;
+            width: 15%;
+            margin-bottom: 3rem;
+            text-align: center;
         }
 
         &::after{
@@ -63,6 +84,10 @@ main{
             top: -20%;
             left: 5%;
             transition: all .2s;
+
+            @media (max-width: 600px){
+                border-top: 2px solid $color-pink;
+            }
         }
 
         &:first-child::before{
@@ -74,6 +99,10 @@ main{
             top: -20%;
             left: 5%;
             transition: all .2s;
+
+            @media (max-width: 600px){
+                border-top: 2px solid $color-orange;
+            }
         }
 
         &:hover{
@@ -97,12 +126,26 @@ main{
         display: none;
 
         &:checked + .nav__list{
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1;
         }
     }
 
     &__label{
         display: none;
+
+        font-size: 3.5rem;
+        cursor: pointer;
+
+        @media (max-width: 600px){
+            position: fixed;
+            display: block;
+            top: 1rem;
+            right: 2rem;
+            z-index: 2;
+        }
     }
 }    
 
@@ -723,13 +766,12 @@ main{
 
     &__icon{
         @media (max-width: 600px){
-            
         }
     }
 
     &__regards{
         @media (max-width: 600px){
-            width: 100%;
+            width: 50%;
         }
     }
 

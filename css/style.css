@@ -43,7 +43,7 @@ body {
       position: relative; } }
   @media (max-width: 600px) {
     .header {
-      padding: 0 2rem;
+      padding: 1rem 2rem;
       position: relative; } }
   .header__logo {
     display: block; }
@@ -125,7 +125,7 @@ main {
     .nav__label {
       position: fixed;
       display: block;
-      top: 1rem;
+      top: 2rem;
       right: 2rem;
       z-index: 2; } }
 

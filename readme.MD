@@ -7,7 +7,7 @@ PROJECT: https://github.com/mwisniewski1991/weeklychallenge2/blob/master/Project
 
 LIVE: https://mwisniewski1991.github.io/weeklychallenge2/
 
-Stack used in project:
+Technology used in project:
 - html
 - css
 - sass (scss)

@@ -34,7 +34,6 @@ main{
 
 .nav{
     &__list{
-
         @media (max-width: 600px){
             display: none;
 
@@ -47,7 +46,6 @@ main{
             padding-top: 10rem;
 
             z-index: 1;
-
 
             // display: flex;
             // flex-direction: column;
